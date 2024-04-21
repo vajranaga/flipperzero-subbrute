@@ -180,6 +180,17 @@ const SubBruteProtocol subbrute_protocol_chamberlain_8bit_300 = {
     .file = ChamberlainFileProtocol};
 
 /**
+ * Chamberlain 8bit 310MHz
+ */
+const SubBruteProtocol subbrute_protocol_chamberlain_8bit_310 = {
+    .frequency = 310000000,
+    .bits = 8,
+    .te = 0,
+    .repeat = 3,
+    .preset = FuriHalSubGhzPresetOok650Async,
+    .file = ChamberlainFileProtocol};
+
+/**
  * Chamberlain 8bit 315MHz
  */
 const SubBruteProtocol subbrute_protocol_chamberlain_8bit_315 = {
@@ -438,6 +449,7 @@ static const char* subbrute_protocol_names[] = {
     [SubBruteAttackChamberlain9bit390] = "Chamberlain 9bit 390MHz",
     [SubBruteAttackChamberlain9bit433] = "Chamberlain 9bit 433MHz",
     [SubBruteAttackChamberlain8bit300] = "Chamberlain 8bit 300MHz",
+    [SubBruteAttackChamberlain8bit310] = "Chamberlain 8bit 310MHz",
     [SubBruteAttackChamberlain8bit315] = "Chamberlain 8bit 315MHz",
     [SubBruteAttackChamberlain8bit390] = "Chamberlain 8bit 390MHz",
     [SubBruteAttackChamberlain7bit300] = "Chamberlain 7bit 300MHz",
@@ -490,6 +502,7 @@ const SubBruteProtocol* subbrute_protocol_registry[] = {
     [SubBruteAttackChamberlain9bit390] = &subbrute_protocol_chamberlain_9bit_390,
     [SubBruteAttackChamberlain9bit433] = &subbrute_protocol_chamberlain_9bit_433,
     [SubBruteAttackChamberlain8bit300] = &subbrute_protocol_chamberlain_8bit_300,
+    [SubBruteAttackChamberlain8bit310] = &subbrute_protocol_chamberlain_8bit_310,
     [SubBruteAttackChamberlain8bit315] = &subbrute_protocol_chamberlain_8bit_315,
     [SubBruteAttackChamberlain8bit390] = &subbrute_protocol_chamberlain_8bit_390,
     [SubBruteAttackChamberlain7bit300] = &subbrute_protocol_chamberlain_7bit_300,
